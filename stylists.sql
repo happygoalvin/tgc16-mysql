@@ -7,12 +7,12 @@ create table stylists(
 
 -- rewards table
 create table rewards(
-    reward_id int unsigned auto_increment primary key,
+    reward_id smallint unsigned auto_increment primary key,
     name varchar (100) not null,
     type varchar (50) not null
 ) engine = innodb;
 
---insert sample data for stylists
+-- insert sample data for stylists
 insert into stylists (name, designation) values
     ("John Wick", "Director"),
     ("Barbra Streisand", "Senior Hairstylist"),
@@ -20,7 +20,7 @@ insert into stylists (name, designation) values
     ("Will Smith", "Celebrity Hairstylist"),
     ("Vincent Ang", "Hairstylist");
 
---insert sample data for rewards
+-- insert sample data for rewards
 insert into rewards (name, type) value
     ("$5 OFF", "Discount"),
     ("Tresemme Shampoo", "Product"),
@@ -29,11 +29,12 @@ insert into rewards (name, type) value
     ("Bumble and Bumble Pomade", "Product");
 
 -- how to change primary key data type
---alter table stylists
---modify stylist_id smallint unsigned;
+-- alter table stylists
+-- modify stylist_id smallint unsigned;
 
---alter table rewards
---modify reward_id smallint unsigned;
+-- alter table rewards
+-- modify reward_id smallint unsigned;
+
 
 create table members(
     member_id int unsigned auto_increment primary key,
