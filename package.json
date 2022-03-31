@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "dot-env": "^0.0.1",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "handlebars-helpers": "^0.10.0",
+    "hbs": "^4.2.0",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.15",
+    "wax-on": "^1.2.2"
+  },
+  "name": "tgc16-mysql",
+  "description": "![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/happygoalvin/tgc16-mysql.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/happygoalvin/tgc16-mysql/issues"
+  },
+  "homepage": "https://github.com/happygoalvin/tgc16-mysql#readme"
+}
