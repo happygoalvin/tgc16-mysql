@@ -1,0 +1,37 @@
+{{#extends "base"}}
+
+{{#block "content"}}
+<h1>Films</h1>
+<form method="GET" class="d-flex">
+    <input class="form-control" type="text" name="title" placeholder="Enter search terms" />
+    <input type="submit" class="btn btn-primary btn-sm" value="search" />
+    <input class="form-control" type="text" name="release_year" placeholder="Please key in the year" />
+    <input type="submit" class="btn btn-primary btn-sm" value="search" />
+</form>
+<table class="table">
+    <thead>
+    <tr>
+        <td>Film ID</td>
+        <td>Title</td>
+        <td>Description</td>
+        <td>Length</td>
+        <td>Year</td>
+        <td>Language</td>
+    </tr>
+    </thead>
+    <tbody>
+        {{#each films}}
+        <tr>
+            <td>{{this.film_id}}</td>
+            <td>{{this.title}}</td>
+            <td>{{this.description}}</td>
+            <td>{{this.length}}</td>
+            <td>{{this.release_year}}</td>
+            <td>{{this.language_name}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+{{/block}}
+
+{{/extends}}

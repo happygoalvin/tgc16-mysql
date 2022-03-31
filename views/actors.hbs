@@ -1,0 +1,37 @@
+{{#extends 'base'}}
+
+{{#block "content"}}
+<h1>Actors</h1>
+<a href="/actors/create" class="btn btn-primary">Add New</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Actor ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each actors}}
+        <tr>
+            <td>{{this.actor_id}}</td>
+            <td>{{this.first_name}}</td>
+            <td>{{this.last_name}}</td>
+            <td>
+                <a href="/actors/{{this.actor_id}}/update" class="btn btn-success btn-sm">
+                Update
+                </a>
+            </td>
+            <td>
+                <a href="/actors/{{this.actor_id}}/delete" class="btn btn-danger btn-sm">
+                Delete
+                </a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+
+{{/block}}
+
+{{/extends}}
